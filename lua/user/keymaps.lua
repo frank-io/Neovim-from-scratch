@@ -19,15 +19,20 @@ vim.g.maplocalleader = " "
 --   command_mode = "c",
 
 -- Normal --
--- Better window navigation
+-- Better window navigation, for splited windows
+-- Moving to the window on the left
 keymap("n", "<C-h>", "<C-w>h", opts)
+-- Moving to the window on the bottom
 keymap("n", "<C-j>", "<C-w>j", opts)
+-- Moving to the window on the top
 keymap("n", "<C-k>", "<C-w>k", opts)
+-- Moving to the window on the right
 keymap("n", "<C-l>", "<C-w>l", opts)
 
+-- Open/close file explorer
 keymap("n", "<leader>e", ":Lex 30<cr>", opts)
 
--- Resize with arrows
+-- Resize with splited windows/arrows
 keymap("n", "<C-Up>", ":resize -2<CR>", opts)
 keymap("n", "<C-Down>", ":resize +2<CR>", opts)
 keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
@@ -55,14 +60,14 @@ keymap("v", "<A-j>", ":m .+1<CR>==", opts)
 keymap("v", "<A-k>", ":m .-2<CR>==", opts)
 keymap("v", "p", '"_dP', opts)
 
--- Visual Block --
+-- Visual Block
 -- Move text up and down
 keymap("x", "J", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "K", ":move '<-2<CR>gv-gv", opts)
 keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 
--- Terminal --
+-- Terminal 
 -- Better terminal navigation
 keymap("t", "<C-h>", "<C-\\><C-N><C-w>h", term_opts)
 keymap("t", "<C-j>", "<C-\\><C-N><C-w>j", term_opts)
