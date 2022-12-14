@@ -60,8 +60,10 @@ return packer.startup(function(use)
 	-- Colorschemes
   use { "folke/tokyonight.nvim", commit = "66bfc2e8f754869c7b651f3f47a2ee56ae557764" }
   use { "lunarvim/darkplus.nvim", commit = "13ef9daad28d3cf6c5e793acfc16ddbf456e1c83" }
+  use { "rebelot/kanagawa.nvim", commit = "fb733c1043a462155b52cd97efd920f1dd72d33a" }
+  use { "EdenEast/nightfox.nvim", commit = "0903c4886535d97e6e62f710ab97119d2e09aa0b" }
 
-	-- Cmp 
+	-- Cmp
   use { "hrsh7th/nvim-cmp", commit = "b0dff0ec4f2748626aae13f011d1a47071fe9abc" } -- The completion plugin
   use { "hrsh7th/cmp-buffer", commit = "3022dbc9166796b644a841a02de8dd1cc1d311fa" } -- buffer completions
   use { "hrsh7th/cmp-path", commit = "447c87cdd6e6d6a1d2488b1d43108bfa217f56e1" } -- path completions
@@ -86,12 +88,13 @@ return packer.startup(function(use)
 	-- Treesitter
 	use {
 		"nvim-treesitter/nvim-treesitter",
-		commit = "8e763332b7bf7b3a426fd8707b7f5aa85823a5ac",
+		commit = "1942f3554184e9d9dfb90dcc6542047b8f6511f2",
 	}
 
 	-- Git
 	use { "lewis6991/gitsigns.nvim", commit = "2c6f96dda47e55fa07052ce2e2141e8367cbaaf2" }
-
+  use { "sindrets/diffview.nvim", commit = "e37b2d9aaba408954d0e894e27e6f4dbf939ef95", requires = 'nvim-lua/plenary.nvim' }
+  use { "kdheepak/lazygit.nvim", commit = "32bffdebe273e571588f25c8a708ca7297928617" }
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then
