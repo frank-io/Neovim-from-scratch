@@ -55,7 +55,9 @@ return packer.startup(function(use)
   use { "lewis6991/impatient.nvim", commit = "b842e16ecc1a700f62adb9802f8355b99b52a5a6" }
   use { "lukas-reineke/indent-blankline.nvim", commit = "db7cbcb40cc00fc5d6074d7569fb37197705e7f6" }
   use { "goolord/alpha-nvim", commit = "0bb6fc0646bcd1cdb4639737a1cee8d6e08bcc31" }
-	use {"folke/which-key.nvim"}
+	use { "folke/which-key.nvim" }
+  use { "folke/todo-comments.nvim" }
+  use { "folke/trouble.nvim", requires = "kyazdani42/nvim-web-devicons" } 
 
 	-- Colorschemes
   use { "folke/tokyonight.nvim", commit = "66bfc2e8f754869c7b651f3f47a2ee56ae557764" }
@@ -86,10 +88,8 @@ return packer.startup(function(use)
 	use { "nvim-telescope/telescope.nvim", commit = "76ea9a898d3307244dce3573392dcf2cc38f340f" }
 
 	-- Treesitter
-	use {
-		"nvim-treesitter/nvim-treesitter",
-		commit = "1942f3554184e9d9dfb90dcc6542047b8f6511f2",
-	}
+	use { "nvim-treesitter/nvim-treesitter", commit = "1942f3554184e9d9dfb90dcc6542047b8f6511f2" }
+  use { "simrat39/symbols-outline.nvim", commit = "6a3ed24c5631da7a5d418bced57c16b32af7747c" }
 
 	-- Git
 	use { "lewis6991/gitsigns.nvim", commit = "2c6f96dda47e55fa07052ce2e2141e8367cbaaf2" }
