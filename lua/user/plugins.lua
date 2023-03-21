@@ -56,15 +56,17 @@ return packer.startup(function(use)
   use { "lukas-reineke/indent-blankline.nvim", commit = "db7cbcb40cc00fc5d6074d7569fb37197705e7f6" }
   use { "goolord/alpha-nvim", commit = "0bb6fc0646bcd1cdb4639737a1cee8d6e08bcc31" }
 	use { "folke/which-key.nvim" }
-  use { "folke/todo-comments.nvim" }
-  use { "folke/trouble.nvim", requires = "kyazdani42/nvim-web-devicons" } 
+  use { "folke/todo-comments.nvim", requires = "nvim-lua/plenary.nvim" }
+  use { "folke/trouble.nvim", requires = "kyazdani42/nvim-web-devicons" }
 
 	-- Colorschemes
   use { "folke/tokyonight.nvim", commit = "66bfc2e8f754869c7b651f3f47a2ee56ae557764" }
   use { "lunarvim/darkplus.nvim", commit = "13ef9daad28d3cf6c5e793acfc16ddbf456e1c83" }
   use { "rebelot/kanagawa.nvim", commit = "fb733c1043a462155b52cd97efd920f1dd72d33a" }
-  use { "EdenEast/nightfox.nvim", commit = "0903c4886535d97e6e62f710ab97119d2e09aa0b" }
-
+  use { "Shatur/neovim-ayu", commit = "0eb91afe11f1763a477655965684269a545012e1" }
+  -- use { "morhetz/gruvbox" }
+  use { "ellisonleao/gruvbox.nvim" }
+  use { "NLKNguyen/papercolor-theme" }
 	-- Cmp
   use { "hrsh7th/nvim-cmp", commit = "b0dff0ec4f2748626aae13f011d1a47071fe9abc" } -- The completion plugin
   use { "hrsh7th/cmp-buffer", commit = "3022dbc9166796b644a841a02de8dd1cc1d311fa" } -- buffer completions
@@ -83,6 +85,7 @@ return packer.startup(function(use)
   use { "williamboman/mason-lspconfig.nvim", commit = "0051870dd728f4988110a1b2d47f4a4510213e31" }
 	use { "jose-elias-alvarez/null-ls.nvim", commit = "c0c19f32b614b3921e17886c541c13a72748d450" } -- for formatters and linters
   use { "RRethy/vim-illuminate", commit = "a2e8476af3f3e993bb0d6477438aad3096512e42" }
+  -- use { "ray-x/navigator.lua", requires = {{ 'ray-x/guihua.lua', run = 'cd lua/fzy && make' }} }
 
 	-- Telescope
 	use { "nvim-telescope/telescope.nvim", commit = "76ea9a898d3307244dce3573392dcf2cc38f340f" }
@@ -94,7 +97,12 @@ return packer.startup(function(use)
 	-- Git
 	use { "lewis6991/gitsigns.nvim", commit = "2c6f96dda47e55fa07052ce2e2141e8367cbaaf2" }
   use { "sindrets/diffview.nvim", commit = "e37b2d9aaba408954d0e894e27e6f4dbf939ef95", requires = 'nvim-lua/plenary.nvim' }
-  use { "kdheepak/lazygit.nvim", commit = "32bffdebe273e571588f25c8a708ca7297928617" }
+  use { "f-person/git-blame.nvim" }
+
+  -- Markdown
+  use { "ellisonleao/glow.nvim" }
+
+
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then
