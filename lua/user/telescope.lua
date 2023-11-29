@@ -95,7 +95,6 @@ telescope.setup {
         "--glob=!**/.git/*",
         "--glob=!**/node_modules/*",
         "--glob=!**/.next/*",
-        "--glob=!**/.github/*",
         "--glob=!**/.mypy_cache/*",
         "--glob=!**/.vscode/*",
         "--glob=!**/__pycache__/*"
