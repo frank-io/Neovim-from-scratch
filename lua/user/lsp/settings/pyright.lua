@@ -1,10 +1,10 @@
 return {
-  settings = {
-    python = {
-      analysis = {
-        typeCheckingMode = "off",
-        diagnosticMode = 'openFilesOnly',
-      },
-    },
-  },
+	settings = {
+		python = {
+			analysis = {
+				typeCheckingMode = "off",
+				diagnosticMode = "openFilesOnly",
+			},
+		},
+	},
 }

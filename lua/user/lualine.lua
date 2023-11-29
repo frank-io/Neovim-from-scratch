@@ -21,12 +21,12 @@ local diff = {
 	"diff",
 	colored = false,
 	symbols = { added = " ", modified = " ", removed = " " }, -- changes diff symbols
-  cond = hide_in_width
+	cond = hide_in_width,
 }
 
 local filename = {
-  "filename",
-  path = 1
+	"filename",
+	path = 1,
 }
 
 local mode = {

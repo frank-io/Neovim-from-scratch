@@ -25,4 +25,3 @@ require("user.trouble")
 require("user.indent_blankline")
 require("user.todo_comments")
 require("user.glow")
--- require "user.legendary"

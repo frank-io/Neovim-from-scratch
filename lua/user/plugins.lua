@@ -59,12 +59,13 @@ return packer.startup(function(use)
 	use({ "folke/todo-comments.nvim", requires = "nvim-lua/plenary.nvim" })
 	use({ "folke/trouble.nvim", requires = "kyazdani42/nvim-web-devicons" })
 
-  -- fold
-  use {'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async'}
+	-- fold
+	use({ "kevinhwang91/nvim-ufo", requires = "kevinhwang91/promise-async" })
 
 	-- Colorschemes
 	use({ "rebelot/kanagawa.nvim", commit = "fb733c1043a462155b52cd97efd920f1dd72d33a" })
 	use({ "EdenEast/nightfox.nvim" })
+
 	-- Cmp
 	use({ "hrsh7th/nvim-cmp", commit = "b0dff0ec4f2748626aae13f011d1a47071fe9abc" }) -- The completion plugin
 	use({ "hrsh7th/cmp-buffer", commit = "3022dbc9166796b644a841a02de8dd1cc1d311fa" }) -- buffer completions
@@ -83,14 +84,12 @@ return packer.startup(function(use)
 	use({ "williamboman/mason-lspconfig.nvim" })
 	use({ "jose-elias-alvarez/null-ls.nvim", commit = "c0c19f32b614b3921e17886c541c13a72748d450" }) -- for formatters and linters
 	use({ "RRethy/vim-illuminate", commit = "a2e8476af3f3e993bb0d6477438aad3096512e42" })
-	-- use { "ray-x/navigator.lua", requires = {{ 'ray-x/guihua.lua', run = 'cd lua/fzy && make' }} }
-	-- use { "mrjones2014/legendary.nvim" }
 
 	-- UI interface
 	use({ "stevearc/dressing.nvim" })
 
 	-- Telescope
-	use({ "nvim-telescope/telescope.nvim", commit = "76ea9a898d3307244dce3573392dcf2cc38f340f" })
+	use({ "nvim-telescope/telescope.nvim", commit = "84c5a71d825b6687a55aed6f41e98b92fd8e5454" })
 
 	-- Treesitter
 	use({ "nvim-treesitter/nvim-treesitter", commit = "e23d5493cf14401ef02ec2e4e99b65f199869966" })
