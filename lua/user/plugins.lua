@@ -53,7 +53,7 @@ return packer.startup(function(use)
 	use({ "akinsho/toggleterm.nvim", commit = "2a787c426ef00cb3488c11b14f5dcf892bbd0bda" })
 	use({ "ahmedkhalf/project.nvim", commit = "628de7e433dd503e782831fe150bb750e56e55d6" })
 	use({ "lewis6991/impatient.nvim", commit = "b842e16ecc1a700f62adb9802f8355b99b52a5a6" })
-	use({ "lukas-reineke/indent-blankline.nvim", commit = "db7cbcb40cc00fc5d6074d7569fb37197705e7f6" })
+	use({ "lukas-reineke/indent-blankline.nvim", commit = "29be0919b91fb59eca9e90690d76014233392bef" })
 	use({ "goolord/alpha-nvim", commit = "0bb6fc0646bcd1cdb4639737a1cee8d6e08bcc31" })
 	use({ "folke/which-key.nvim" })
 	use({ "folke/todo-comments.nvim", requires = "nvim-lua/plenary.nvim" })
@@ -78,6 +78,8 @@ return packer.startup(function(use)
 	use({ "L3MON4D3/LuaSnip", commit = "8f8d493e7836f2697df878ef9c128337cbf2bb84" }) --snippet engine
 	use({ "rafamadriz/friendly-snippets", commit = "2be79d8a9b03d4175ba6b3d14b082680de1b31b1" }) -- a bunch of snippets to use
 
+	use({ "gelguy/wilder.nvim" })
+
 	-- LSP
 	use({ "neovim/nvim-lspconfig", commit = "f11fdff7e8b5b415e5ef1837bdcdd37ea6764dda" }) -- enable LSP
 	use({ "williamboman/mason.nvim" }) -- simple to use language server installer
@@ -92,7 +94,7 @@ return packer.startup(function(use)
 	use({ "nvim-telescope/telescope.nvim", commit = "84c5a71d825b6687a55aed6f41e98b92fd8e5454" })
 
 	-- Treesitter
-	use({ "nvim-treesitter/nvim-treesitter", commit = "e23d5493cf14401ef02ec2e4e99b65f199869966" })
+	use({ "nvim-treesitter/nvim-treesitter", commit = "93750d388162f5658cfdb77bdcfe80711e637647" })
 	use({ "simrat39/symbols-outline.nvim", commit = "6a3ed24c5631da7a5d418bced57c16b32af7747c" })
 
 	-- Git
